@@ -107,3 +107,9 @@ Body:
     "body": "This is my first API testing project.",
     "userId": 1
 }
+Expected:
+
+HTTP 201 Created.
+
+Kết quả
+<img width="1048" height="559" alt="image" src="https://github.com/user-attachments/assets/d9413d5a-fe1c-47ec-95b4-8bc48c097b1e" />
