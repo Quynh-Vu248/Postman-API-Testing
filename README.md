@@ -18,13 +18,10 @@ Các nội dung thực hiện:
 - Kiểm tra HTTP Status Code
 - Kiểm tra Response JSON
 - Viết Test Script bằng JavaScript
-- Kiểm tra Response Time
-
 
 ## 3. Công cụ sử dụng
 
 - Postman Web
-- Google Chrome
 - GitHub
 
 ## 4. API sử dụng
@@ -62,8 +59,8 @@ Response có các trường:
 - body
 
 ### Kết quả
+<img width="549" height="549" alt="image" src="https://github.com/user-attachments/assets/63d0a0aa-5360-453f-a25d-862e20a97df3" />
 
-![GET Request](images/01-get-single-post.png)
 
 
 ## 5.2 GET - Test Response
@@ -77,7 +74,8 @@ Các test đã thực hiện:
 
 ### Kết quả
 
-![GET Test](images/02-get-test-results.png)
+<img width="736" height="598" alt="image" src="https://github.com/user-attachments/assets/aeaf277c-792d-4ae2-a579-19a8846457b5" />
+
 
 ## 5.3 GET - Lấy danh sách
 
@@ -89,9 +87,8 @@ Expected:
 
 HTTP 200 OK và trả về danh sách JSON.
 
-![GET All](images/03-get-all-posts.png)
+<img width="738" height="587" alt="image" src="https://github.com/user-attachments/assets/a9188cad-0e20-4dce-a3db-372273ff65ea" />
 
----
 
 ## 5.4 POST - Tạo bài viết
 
@@ -104,5 +101,45 @@ HTTP 201 Created.
 
 Kết quả
 <img width="1048" height="559" alt="image" src="https://github.com/user-attachments/assets/ca1b1fa4-4f95-41b3-80bb-9ac149e82f94" />
+## 5.5 PUT - Cập nhật bài viết
 
+Request:
 
+PUT /posts/1
+
+Expected:
+
+HTTP 200 OK.
+
+### Test Results
+<img width="561" height="536" alt="image" src="https://github.com/user-attachments/assets/6976a2bb-c49e-44a0-9a4e-d613f233cb3b" />
+## 5.6 DELETE - Xóa bài viết
+
+Request:
+
+DELETE /posts/1
+
+Expected:
+
+Request được xử lý thành công.
+<img width="733" height="450" alt="image" src="https://github.com/user-attachments/assets/c07f6628-de61-479e-a870-a1af8cbe53f5" />
+## 6. Bảng kết quả kiểm thử
+Test Case	Method	Expected	Actual	Result
+TC01	GET	200	200	PASS
+TC02	GET	JSON	JSON	PASS
+TC03	POST	201	201	PASS
+TC04	PUT	200	200	PASS
+TC05	DELETE	Success	Success	PASS
+## 7.Chạy toàn bộ collection
+<img width="740" height="582" alt="image" src="https://github.com/user-attachments/assets/82fc0c82-62fa-4682-83ef-389f488bf46c" />
+## 8. Kết luận
+
+Các kỹ năng đã thực hiện:
+
+Tạo HTTP Request
+Gửi GET, POST, PUT, DELETE
+Kiểm tra Status Code
+Kiểm tra Response
+Viết Test Script
+Chạy Collection
+Phân tích kết quả kiểm thử
